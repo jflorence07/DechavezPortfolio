@@ -80,10 +80,10 @@ if (contactForm) {
       message || 'No message provided.',
     ];
 
-    const mailto = `mailto:jflorence.jf01@gmail.com?subject=${encodeURIComponent(
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jflorence.jf01@gmail.com&su=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
 
-    window.location.href = mailto;
+    window.location.href = gmailUrl;
   });
 }
